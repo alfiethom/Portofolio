@@ -1,6 +1,6 @@
 # Who is Alfred Thomas ?
 
-Welcome to my GitHub portofolio . I am Alfred Thomas passionate about data analysis . i have just completed a Master in Data Science but i am already working as Quality Lead in customer field. During my daily work i have learned how to extract data and analyse with Excel by using pivot technics . i also gain experience by presenting my findings to the stakeholders However i did the Master in Data Science to get more deeper in Data analysis by learning Python and Visualizatin Tools such as Power BI or Tableau . i could include Ms Power BI in my daily work but now i am looking for a permanent role as Data Analyst and this portofolio has been created to show you the skills i have gain . 
+Welcome to my GitHub portofolio . I am Alfred Thomas passionate about data analysis . i have just completed a Master in Data Science but i am already working as Quality Lead in customer field. During my daily work i have learned how to extract data and analyse with Excel by using pivot technics . i also gain experience by presenting my findings to the stakeholders However i did the Master in Data Science to get more deeper in Data analysis by learning Python and Visualization Tools such as Power BI or Tableau . i could include Ms Power BI in my daily work but now i am looking for a permanent role as Data Analyst and this portofolio has been created to show you the skills i have gained . 
 
 # Projects
 
