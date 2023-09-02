@@ -4,7 +4,7 @@ Welcome to my GitHub portofolio . I am Alfred Thomas passionate about data analy
 
 # Projects
 
-- **Project 1**: [Capstone Project Oracle :ORA-FASHION: Customer Segmentation and marketing mission ](link-to-project-1)  
+- **Project 1**: [Capstone Project Oracle :ORA-FASHION: Customer Segmentation and marketing mission ](https://github.com/alfiethom/Portofolio/blob/2b8ad488710174af59596ff7308503deb59a5462/Customer_Segmentation_and_marketing_mission.ipynblink-to-project-1)  
   This project was my capstone project that i presented for the master in Data Science. in this Project i used Google colab for Data Cleaning However as the data was cleaned already i used Tableau for RFM segmentation and all the output .
 
 - **Project 2**: [Spotify songs data analyst ](https://github.com/alfiethom/Portofolio/blob/275b1c50463c83a15c4d0d8515281db0b5e61aa4/Spotify%20top%20200%20songs/Spotify%20top%20200%20songs.md)  
