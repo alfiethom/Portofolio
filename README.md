@@ -10,7 +10,7 @@ Welcome to my GitHub portofolio . I am Alfred Thomas passionate about data analy
 - **Project 2**: [Spotify songs data analyst ](https://github.com/alfiethom/Portofolio/blob/275b1c50463c83a15c4d0d8515281db0b5e61aa4/Spotify%20top%20200%20songs/Spotify%20top%20200%20songs.md)  
   Hands on project about Spotify Dataset where i could extract and analyse data about songs from Spotify. Data analysis completed in Jupiter Notebook using Pandas and Dashboard was created with MS Power BI
 
-  - **Project **: [Data Visualisation Service Desk Agent ](https://github.com/alfiethom/Portofolio/tree/046883cc9c6f6110a539b281e77edb56d073fead/Dashboard_Call_center)  
+ - **Project 3**: [Data Visualisation Service Desk Agent ](https://github.com/alfiethom/Portofolio/tree/046883cc9c6f6110a539b281e77edb56d073fead/Dashboard_Call_center)  
   a project concerning service performance, the data recovered made it possible to create a dashboard in Power BI using the DAX language for calculations.
 
 ## Skills
