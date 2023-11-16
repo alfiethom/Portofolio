@@ -13,7 +13,7 @@ Welcome to my GitHub portofolio . I am Alfred Thomas passionate about data analy
  - **Project 3**: [Data Visualisation Service Desk Agent ](https://github.com/alfiethom/Portofolio/tree/046883cc9c6f6110a539b281e77edb56d073fead/Dashboard_Call_center)  
   a project concerning service performance, the data recovered made it possible to create a dashboard in Power BI using the DAX language for calculations.
 
-- **Project 4**: [[Customer course Matching](https://github.com/alfiethom/Portofolio/blob/4ee08fa9bcace50b5aa3f4b5a302c05a5a178cdc/customer-course-matching.ipynb)  
+- **Project 4**: [Customer course Matching](https://github.com/alfiethom/Portofolio/blob/4ee08fa9bcace50b5aa3f4b5a302c05a5a178cdc/customer-course-matching.ipynb)  
   Real time project where the data were extracted from a website of e-learning platform . the objective of this project was to know the courses to which underwriters applied and to understand the reasons why they subscribed.
 
 ## Skills
