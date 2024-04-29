@@ -4,6 +4,8 @@ Welcome to my GitHub portofolio . I am Alfred Thomas passionate about data analy
 
 # Projects
 
+Data Analysis 
+
 - **Project 1**: [Capstone Project Oracle :ORA-FASHION: Customer Segmentation and marketing mission ](https://github.com/alfiethom/Portofolio/tree/2cf4ab6e036d369f7b2e7fdd974382e87e39eb56/capstone_project)
   This project was my capstone project that i presented for the master in Data Science. in this Project i used Google colab for Data Cleaning However as the data was cleaned already i used Tableau for RFM segmentation and all the output .
 
@@ -16,6 +18,14 @@ Welcome to my GitHub portofolio . I am Alfred Thomas passionate about data analy
 - **Project 4**: [Customer course Matching](https://github.com/alfiethom/Portofolio/blob/4ee08fa9bcace50b5aa3f4b5a302c05a5a178cdc/customer-course-matching.ipynb)  
   Real time project where the data were extracted from a website of e-learning platform . the objective of this project was to know the courses to which underwriters applied and to understand the reasons why they subscribed.
 
+Data Visualisation 
+
+- **Project 1**: [Global Store Visualisation : Customer Segmentation and marketing mission ](https://github.com/alfiethom/Portofolio/tree/2cf4ab6e036d369f7b2e7fdd974382e87e39eb56/capstone_project)
+  This project was my capstone project that i presented for the master in Data Science. in this Project i used Google colab for Data Cleaning However as the data was cleaned already i used Tableau for RFM segmentation and all the output .
+
+- **Project 2**: [Heart Disesase Key indicator ](https://github.com/alfiethom/Portofolio/blob/275b1c50463c83a15c4d0d8515281db0b5e61aa4/Spotify%20top%20200%20songs/Spotify%20top%20200%20songs.md)  
+  Hands on project about Spotify Dataset where i could extract and analyse data about songs from Spotify. Data analysis completed in Jupiter Notebook using Pandas and Dashboard was created with MS Power BI
+  
 ## Skills
 
 - Data analysis and interpretation
