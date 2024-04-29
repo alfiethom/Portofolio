@@ -23,8 +23,10 @@ Data Visualisation
 - **Project 2**: [Heart Disesase Key indicator ](https://github.com/alfiethom/Portofolio/tree/7679b53f6f26be77436a7093e5fe5855bb7f28d8/Heart%20Disease%20Key%20indicator)  
   Hands on project about Spotify Dataset where i could extract and analyse data about songs from Spotify. Data analysis completed in Jupiter Notebook using Pandas and Dashboard was created with MS Power BI
 
-  - **Project 3**: [Data Visualisation Service Desk Agent ](https://github.com/alfiethom/Portofolio/tree/046883cc9c6f6110a539b281e77edb56d073fead/Dashboard_Call_center)
+-   **Project 3**: [Data Visualisation Service Desk Agent ](https://github.com/alfiethom/Portofolio/tree/046883cc9c6f6110a539b281e77edb56d073fead/Dashboard_Call_center)
     a project concerning service performance, the data recovered made it possible to create a dashboard in Power BI using the DAX language for calculations.
+
+ 
   
 ## Skills
 
