@@ -4,7 +4,7 @@ Welcome to my GitHub portofolio . I am Alfred Thomas passionate about data analy
 
 # Projects
 
-Data Analysis 
+# Data Analysis 
 
 - **Project 1**: [Capstone Project Oracle :ORA-FASHION: Customer Segmentation and marketing mission ](https://github.com/alfiethom/Portofolio/tree/2cf4ab6e036d369f7b2e7fdd974382e87e39eb56/capstone_project)
   This project was my capstone project that i presented for the master in Data Science. in this Project i used Google colab for Data Cleaning However as the data was cleaned already i used Tableau for RFM segmentation and all the output .
@@ -15,7 +15,7 @@ Data Analysis
 - **Project 3**: [Customer course Matching](https://github.com/alfiethom/Portofolio/blob/4ee08fa9bcace50b5aa3f4b5a302c05a5a178cdc/customer-course-matching.ipynb)  
   Real time project where the data were extracted from a website of e-learning platform . the objective of this project was to know the courses to which underwriters applied and to understand the reasons why they subscribed.
 
-Data Visualisation 
+# Data Visualisation 
 
 - **Project 1**: [Global Store Visualisation : Power BI Practise ](https://github.com/alfiethom/Portofolio/tree/e4649784efc85a769e2da926b9f254f44eef7faa/Global%20Store%20US)
   This project was my capstone project that i presented for the master in Data Science. in this Project i used Google colab for Data Cleaning However as the data was cleaned already i used Tableau for RFM segmentation and all the output .
