@@ -6,8 +6,8 @@ Welcome to my GitHub portofolio . I am Alfred Thomas passionate about data analy
 
 # Data Analysis 
 
-- **Project 1**: [Capstone Project Oracle :ORA-FASHION: Customer Segmentation and marketing mission ](https://github.com/alfiethom/Portofolio/tree/2cf4ab6e036d369f7b2e7fdd974382e87e39eb56/capstone_project)
-  This project was my capstone project that i presented for the master in Data Science. in this Project i used Google colab for Data Cleaning However as the data was cleaned already i used Tableau for RFM segmentation and all the output .
+- **Project 1**: [Supermarket Sales Analysis ](https://github.com/alfiethom/Portofolio/blob/87d63a2d8a17aba0958d2bb8429d2182866d0121/supermarketsales%20(1).ipynb)
+  Supermarket dataset used from kaggle to get details about a supermaket and product from differents branch. we used python to understand the top product sold and what can impact their choice of product. but also what can impact their decison to use their membership card .
 
 - **Project 2**: [Spotify songs data analyst ](https://github.com/alfiethom/Portofolio/blob/275b1c50463c83a15c4d0d8515281db0b5e61aa4/Spotify%20top%20200%20songs/Spotify%20top%20200%20songs.md)  
   Hands on project about Spotify Dataset where i could extract and analyse data about songs from Spotify. Data analysis completed in Jupiter Notebook using Pandas and Dashboard was created with MS Power BI
