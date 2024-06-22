@@ -25,10 +25,10 @@ Welcome to my GitHub portofolio . I am Alfred Thomas passionate about data analy
 # Data Visualisation 
 
 - **Project 1**: [Global Store Visualisation : Power BI Practise ](https://github.com/alfiethom/Portofolio/tree/e4649784efc85a769e2da926b9f254f44eef7faa/Global%20Store%20US)
-  This project was my capstone project that i presented for the master in Data Science. in this Project i used Google colab for Data Cleaning However as the data was cleaned already i used Tableau for RFM segmentation and all the output .
+  Hands on project to develop an interactive platform that visualizes global data trends for a store .
 
 - **Project 2**: [Heart Disesase Key indicator ](https://github.com/alfiethom/Portofolio/tree/7679b53f6f26be77436a7093e5fe5855bb7f28d8/Heart%20Disease%20Key%20indicator)  
-  Hands on project about Spotify Dataset where i could extract and analyse data about songs from Spotify. Data analysis completed in Jupiter Notebook using Pandas and Dashboard was created with MS Power BI
+  Hands on project about Spotify Heart disease where i could agregate data to find trends and patterns regaing Heart disease.
 
 -   **Project 3**: [Data Visualisation Service Desk Agent ](https://github.com/alfiethom/Portofolio/tree/046883cc9c6f6110a539b281e77edb56d073fead/Dashboard_Call_center)
     a project concerning service performance, the data recovered made it possible to create a dashboard in Power BI using the DAX language for calculations.
