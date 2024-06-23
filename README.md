@@ -9,7 +9,7 @@ Welcome to my GitHub portofolio . I am Alfred Thomas passionate about data analy
 - **Project 1**: [Supermarket Sales Analysis ](https://github.com/alfiethom/Portofolio/blob/87d63a2d8a17aba0958d2bb8429d2182866d0121/supermarketsales%20(1).ipynb)
   Supermarket dataset used from kaggle to get details about a supermaket and product from differents branch. we used python to understand the top product sold and what can impact their choice of product. but also what can impact their decison to use their membership card .
 
-- **Project 2**: [E-commerce  data analyst ] (https://github.com/alfiethom/Portofolio/blob/9c799ea5e0c64551a4b6792986c029043946839a/e-commerce-data-analysis.ipynb)
+- **Project 2**: [E-commerce  data analyst ](https://github.com/alfiethom/Portofolio/blob/9c799ea5e0c64551a4b6792986c029043946839a/e-commerce-data-analysis.ipynb)
   Hands on project about E-commerce datasaet from kaggle . in this project the goal was to analyse Customer performance , product performance and Sales performance .
 
 - **Project 3**: [Customer course Matching](https://github.com/alfiethom/Portofolio/blob/4ee08fa9bcace50b5aa3f4b5a302c05a5a178cdc/customer-course-matching.ipynb)  
