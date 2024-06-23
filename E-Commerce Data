@@ -1,0 +1,529 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "8b5ad20c",
+   "metadata": {
+    "papermill": {
+     "duration": 0.004404,
+     "end_time": "2024-06-23T15:13:58.094041",
+     "exception": false,
+     "start_time": "2024-06-23T15:13:58.089637",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "About Dataset\n",
+    "Context\n",
+    "Typically e-commerce datasets are proprietary and consequently hard to find among publicly available data. However, The UCI Machine Learning Repository has made this dataset containing actual transactions from 2010 and 2011. The dataset is maintained on their site, where it can be found by the title \"Online Retail\".\n",
+    "\n",
+    "Content\n",
+    "\"This is a transnational data set which contains all the transactions occurring between 01/12/2010 and 09/12/2011 for a UK-based and registered non-store online retail.The company mainly sells unique all-occasion gifts. Many customers of the company are wholesalers."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "7bfee55a",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-23T15:13:58.103848Z",
+     "iopub.status.busy": "2024-06-23T15:13:58.103426Z",
+     "iopub.status.idle": "2024-06-23T15:14:00.750910Z",
+     "shell.execute_reply": "2024-06-23T15:14:00.749699Z"
+    },
+    "papermill": {
+     "duration": 2.655703,
+     "end_time": "2024-06-23T15:14:00.753790",
+     "exception": false,
+     "start_time": "2024-06-23T15:13:58.098087",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": [
+    "import pandas as pd \n",
+    "import numpy as np \n",
+    "import matplotlib.pyplot as plt\n",
+    "\n",
+    "file = pd.read_csv('/kaggle/input/ecommerce-data/data.csv',encoding='latin1')\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "b259c4ae",
+   "metadata": {
+    "papermill": {
+     "duration": 0.00355,
+     "end_time": "2024-06-23T15:14:00.761441",
+     "exception": false,
+     "start_time": "2024-06-23T15:14:00.757891",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "**Step 1 : DATA EXPLORATION**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "4b35b825",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-23T15:14:00.771380Z",
+     "iopub.status.busy": "2024-06-23T15:14:00.770963Z",
+     "iopub.status.idle": "2024-06-23T15:14:00.809449Z",
+     "shell.execute_reply": "2024-06-23T15:14:00.808347Z"
+    },
+    "papermill": {
+     "duration": 0.046721,
+     "end_time": "2024-06-23T15:14:00.812219",
+     "exception": false,
+     "start_time": "2024-06-23T15:14:00.765498",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/html": [
+       "<div>\n",
+       "<style scoped>\n",
+       "    .dataframe tbody tr th:only-of-type {\n",
+       "        vertical-align: middle;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe tbody tr th {\n",
+       "        vertical-align: top;\n",
+       "    }\n",
+       "\n",
+       "    .dataframe thead th {\n",
+       "        text-align: right;\n",
+       "    }\n",
+       "</style>\n",
+       "<table border=\"1\" class=\"dataframe\">\n",
+       "  <thead>\n",
+       "    <tr style=\"text-align: right;\">\n",
+       "      <th></th>\n",
+       "      <th>InvoiceNo</th>\n",
+       "      <th>StockCode</th>\n",
+       "      <th>Description</th>\n",
+       "      <th>Quantity</th>\n",
+       "      <th>InvoiceDate</th>\n",
+       "      <th>UnitPrice</th>\n",
+       "      <th>CustomerID</th>\n",
+       "      <th>Country</th>\n",
+       "    </tr>\n",
+       "  </thead>\n",
+       "  <tbody>\n",
+       "    <tr>\n",
+       "      <th>0</th>\n",
+       "      <td>536365</td>\n",
+       "      <td>85123A</td>\n",
+       "      <td>WHITE HANGING HEART T-LIGHT HOLDER</td>\n",
+       "      <td>6</td>\n",
+       "      <td>12/1/2010 8:26</td>\n",
+       "      <td>2.55</td>\n",
+       "      <td>17850.0</td>\n",
+       "      <td>United Kingdom</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>1</th>\n",
+       "      <td>536365</td>\n",
+       "      <td>71053</td>\n",
+       "      <td>WHITE METAL LANTERN</td>\n",
+       "      <td>6</td>\n",
+       "      <td>12/1/2010 8:26</td>\n",
+       "      <td>3.39</td>\n",
+       "      <td>17850.0</td>\n",
+       "      <td>United Kingdom</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>2</th>\n",
+       "      <td>536365</td>\n",
+       "      <td>84406B</td>\n",
+       "      <td>CREAM CUPID HEARTS COAT HANGER</td>\n",
+       "      <td>8</td>\n",
+       "      <td>12/1/2010 8:26</td>\n",
+       "      <td>2.75</td>\n",
+       "      <td>17850.0</td>\n",
+       "      <td>United Kingdom</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>3</th>\n",
+       "      <td>536365</td>\n",
+       "      <td>84029G</td>\n",
+       "      <td>KNITTED UNION FLAG HOT WATER BOTTLE</td>\n",
+       "      <td>6</td>\n",
+       "      <td>12/1/2010 8:26</td>\n",
+       "      <td>3.39</td>\n",
+       "      <td>17850.0</td>\n",
+       "      <td>United Kingdom</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>4</th>\n",
+       "      <td>536365</td>\n",
+       "      <td>84029E</td>\n",
+       "      <td>RED WOOLLY HOTTIE WHITE HEART.</td>\n",
+       "      <td>6</td>\n",
+       "      <td>12/1/2010 8:26</td>\n",
+       "      <td>3.39</td>\n",
+       "      <td>17850.0</td>\n",
+       "      <td>United Kingdom</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>...</th>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "      <td>...</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>95</th>\n",
+       "      <td>536378</td>\n",
+       "      <td>22352</td>\n",
+       "      <td>LUNCH BOX WITH CUTLERY RETROSPOT</td>\n",
+       "      <td>6</td>\n",
+       "      <td>12/1/2010 9:37</td>\n",
+       "      <td>2.55</td>\n",
+       "      <td>14688.0</td>\n",
+       "      <td>United Kingdom</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>96</th>\n",
+       "      <td>536378</td>\n",
+       "      <td>21212</td>\n",
+       "      <td>PACK OF 72 RETROSPOT CAKE CASES</td>\n",
+       "      <td>120</td>\n",
+       "      <td>12/1/2010 9:37</td>\n",
+       "      <td>0.42</td>\n",
+       "      <td>14688.0</td>\n",
+       "      <td>United Kingdom</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>97</th>\n",
+       "      <td>536378</td>\n",
+       "      <td>21975</td>\n",
+       "      <td>PACK OF 60 DINOSAUR CAKE CASES</td>\n",
+       "      <td>24</td>\n",
+       "      <td>12/1/2010 9:37</td>\n",
+       "      <td>0.55</td>\n",
+       "      <td>14688.0</td>\n",
+       "      <td>United Kingdom</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>98</th>\n",
+       "      <td>536378</td>\n",
+       "      <td>21977</td>\n",
+       "      <td>PACK OF 60 PINK PAISLEY CAKE CASES</td>\n",
+       "      <td>24</td>\n",
+       "      <td>12/1/2010 9:37</td>\n",
+       "      <td>0.55</td>\n",
+       "      <td>14688.0</td>\n",
+       "      <td>United Kingdom</td>\n",
+       "    </tr>\n",
+       "    <tr>\n",
+       "      <th>99</th>\n",
+       "      <td>536378</td>\n",
+       "      <td>84991</td>\n",
+       "      <td>60 TEATIME FAIRY CAKE CASES</td>\n",
+       "      <td>24</td>\n",
+       "      <td>12/1/2010 9:37</td>\n",
+       "      <td>0.55</td>\n",
+       "      <td>14688.0</td>\n",
+       "      <td>United Kingdom</td>\n",
+       "    </tr>\n",
+       "  </tbody>\n",
+       "</table>\n",
+       "<p>100 rows × 8 columns</p>\n",
+       "</div>"
+      ],
+      "text/plain": [
+       "   InvoiceNo StockCode                          Description  Quantity  \\\n",
+       "0     536365    85123A   WHITE HANGING HEART T-LIGHT HOLDER         6   \n",
+       "1     536365     71053                  WHITE METAL LANTERN         6   \n",
+       "2     536365    84406B       CREAM CUPID HEARTS COAT HANGER         8   \n",
+       "3     536365    84029G  KNITTED UNION FLAG HOT WATER BOTTLE         6   \n",
+       "4     536365    84029E       RED WOOLLY HOTTIE WHITE HEART.         6   \n",
+       "..       ...       ...                                  ...       ...   \n",
+       "95    536378     22352    LUNCH BOX WITH CUTLERY RETROSPOT          6   \n",
+       "96    536378     21212      PACK OF 72 RETROSPOT CAKE CASES       120   \n",
+       "97    536378     21975       PACK OF 60 DINOSAUR CAKE CASES        24   \n",
+       "98    536378     21977   PACK OF 60 PINK PAISLEY CAKE CASES        24   \n",
+       "99    536378     84991          60 TEATIME FAIRY CAKE CASES        24   \n",
+       "\n",
+       "       InvoiceDate  UnitPrice  CustomerID         Country  \n",
+       "0   12/1/2010 8:26       2.55     17850.0  United Kingdom  \n",
+       "1   12/1/2010 8:26       3.39     17850.0  United Kingdom  \n",
+       "2   12/1/2010 8:26       2.75     17850.0  United Kingdom  \n",
+       "3   12/1/2010 8:26       3.39     17850.0  United Kingdom  \n",
+       "4   12/1/2010 8:26       3.39     17850.0  United Kingdom  \n",
+       "..             ...        ...         ...             ...  \n",
+       "95  12/1/2010 9:37       2.55     14688.0  United Kingdom  \n",
+       "96  12/1/2010 9:37       0.42     14688.0  United Kingdom  \n",
+       "97  12/1/2010 9:37       0.55     14688.0  United Kingdom  \n",
+       "98  12/1/2010 9:37       0.55     14688.0  United Kingdom  \n",
+       "99  12/1/2010 9:37       0.55     14688.0  United Kingdom  \n",
+       "\n",
+       "[100 rows x 8 columns]"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#let's check the data shape \n",
+    "file.head(100)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "ebc2e988",
+   "metadata": {
+    "papermill": {
+     "duration": 0.004191,
+     "end_time": "2024-06-23T15:14:00.820974",
+     "exception": false,
+     "start_time": "2024-06-23T15:14:00.816783",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "#  **now that we have a the shape of data let's check if we have missing values or incorrect data**"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "6991734e",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-23T15:14:00.831606Z",
+     "iopub.status.busy": "2024-06-23T15:14:00.831215Z",
+     "iopub.status.idle": "2024-06-23T15:14:01.148435Z",
+     "shell.execute_reply": "2024-06-23T15:14:01.146778Z"
+    },
+    "papermill": {
+     "duration": 0.325955,
+     "end_time": "2024-06-23T15:14:01.151337",
+     "exception": false,
+     "start_time": "2024-06-23T15:14:00.825382",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'pandas.core.frame.DataFrame'>\n",
+      "RangeIndex: 541909 entries, 0 to 541908\n",
+      "Data columns (total 8 columns):\n",
+      " #   Column       Non-Null Count   Dtype  \n",
+      "---  ------       --------------   -----  \n",
+      " 0   InvoiceNo    541909 non-null  object \n",
+      " 1   StockCode    541909 non-null  object \n",
+      " 2   Description  540455 non-null  object \n",
+      " 3   Quantity     541909 non-null  int64  \n",
+      " 4   InvoiceDate  541909 non-null  object \n",
+      " 5   UnitPrice    541909 non-null  float64\n",
+      " 6   CustomerID   406829 non-null  float64\n",
+      " 7   Country      541909 non-null  object \n",
+      "dtypes: float64(2), int64(1), object(5)\n",
+      "memory usage: 33.1+ MB\n"
+     ]
+    }
+   ],
+   "source": [
+    "#cheking data information to see missing values \n",
+    "\n",
+    "file.info()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "79ecfd24",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-23T15:14:01.162405Z",
+     "iopub.status.busy": "2024-06-23T15:14:01.161971Z",
+     "iopub.status.idle": "2024-06-23T15:14:01.459461Z",
+     "shell.execute_reply": "2024-06-23T15:14:01.458215Z"
+    },
+    "papermill": {
+     "duration": 0.306409,
+     "end_time": "2024-06-23T15:14:01.462451",
+     "exception": false,
+     "start_time": "2024-06-23T15:14:01.156042",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "InvoiceNo           0\n",
+       "StockCode           0\n",
+       "Description      1454\n",
+       "Quantity            0\n",
+       "InvoiceDate         0\n",
+       "UnitPrice           0\n",
+       "CustomerID     135080\n",
+       "Country             0\n",
+       "dtype: int64"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "file.isna().sum()"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "7dd0f55c",
+   "metadata": {
+    "papermill": {
+     "duration": 0.004429,
+     "end_time": "2024-06-23T15:14:01.471818",
+     "exception": false,
+     "start_time": "2024-06-23T15:14:01.467389",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "# We can see that we have missing values in the customerID column. \n",
+    "# this means that some invoices was issues for a non existing customer \n",
+    "# Step2 : Cleaning dataset by removing missing Values "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "id": "444f9c5f",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2024-06-23T15:14:01.483357Z",
+     "iopub.status.busy": "2024-06-23T15:14:01.482531Z",
+     "iopub.status.idle": "2024-06-23T15:14:01.490903Z",
+     "shell.execute_reply": "2024-06-23T15:14:01.489589Z"
+    },
+    "papermill": {
+     "duration": 0.017084,
+     "end_time": "2024-06-23T15:14:01.493523",
+     "exception": false,
+     "start_time": "2024-06-23T15:14:01.476439",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Missing Customer IDs: 135080\n",
+      "Percentage of Missing Customer IDs: 24.93%\n"
+     ]
+    }
+   ],
+   "source": [
+    "#let calculate the percentage of the impact of missing value \n",
+    "\n",
+    "CustomerID_missing = file['CustomerID'].isna().sum()\n",
+    "total_records = len(file)\n",
+    "missing_percentage = (CustomerID_missing / total_records) * 100\n",
+    "\n",
+    "print(f'Missing Customer IDs: {CustomerID_missing}')\n",
+    "print(f'Percentage of Missing Customer IDs: {missing_percentage:.2f}%')\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "e5fd1cad",
+   "metadata": {
+    "papermill": {
+     "duration": 0.004821,
+     "end_time": "2024-06-23T15:14:01.503465",
+     "exception": false,
+     "start_time": "2024-06-23T15:14:01.498644",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "source": [
+    "# Insight : Almost 25 % percent of our customer ID are not consistent for the analysis . knowing that the customerID column is directly linked with invoiceID  and considering the KPI that has to be evaluated for this specific dataset , such as : Sales performance ( total Sales Revenue , Average Order Value (AOV),Conversion Rate) , Customer Metrics ( CLV , etc ) , Product performance ( top sell product ,etc )  removing the 25 % of the Customer ID missing might impact the analysis and biases the conclusion . \n",
+    "# \n",
+    "# hence my recommendation will be to pull out other data where the analysis will be conducted witht quality data .\n",
+    "# "
+   ]
+  }
+ ],
+ "metadata": {
+  "kaggle": {
+   "accelerator": "none",
+   "dataSources": [
+    {
+     "datasetId": 1985,
+     "sourceId": 3404,
+     "sourceType": "datasetVersion"
+    }
+   ],
+   "dockerImageVersionId": 30732,
+   "isGpuEnabled": false,
+   "isInternetEnabled": false,
+   "language": "python",
+   "sourceType": "notebook"
+  },
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.13"
+  },
+  "papermill": {
+   "default_parameters": {},
+   "duration": 7.064696,
+   "end_time": "2024-06-23T15:14:02.030151",
+   "environment_variables": {},
+   "exception": null,
+   "input_path": "__notebook__.ipynb",
+   "output_path": "__notebook__.ipynb",
+   "parameters": {},
+   "start_time": "2024-06-23T15:13:54.965455",
+   "version": "2.5.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
