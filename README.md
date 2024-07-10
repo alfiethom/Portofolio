@@ -31,7 +31,7 @@ Welcome to my GitHub portofolio . I am Alfred Thomas passionate about data analy
   Hands on project about Spotify Heart disease where i could agregate data to find trends and patterns regaing Heart disease.
 
 -   **Project 3**: [UK Railway Data Analysis ](https://github.com/alfiethom/Portofolio/blob/4e02f2f50f776637f6e578df696890df81f3ba3a/UKRailway.pdf)
-    This project is about an analysis of National railway Company to identify the most popular routes , determines the peak time Travels and analyses Revenur from different Tickets types .
+    This project is about an analysis of National railway Company to identify the most popular routes , determines the peak time Travels and analyse the Revenue from different Tickets types .
 
  
   
