@@ -30,8 +30,8 @@ Welcome to my GitHub portofolio . I am Alfred Thomas passionate about data analy
 - **Project 2**: [Heart Disesase Key indicator ](https://github.com/alfiethom/Portofolio/tree/7679b53f6f26be77436a7093e5fe5855bb7f28d8/Heart%20Disease%20Key%20indicator)  
   Hands on project about Spotify Heart disease where i could agregate data to find trends and patterns regaing Heart disease.
 
--   **Project 3**: [Data Visualisation Service Desk Agent ](https://github.com/alfiethom/Portofolio/tree/046883cc9c6f6110a539b281e77edb56d073fead/Dashboard_Call_center)
-    a project concerning service performance, the data recovered made it possible to create a dashboard in Power BI using the DAX language for calculations.
+-   **Project 3**: [UK Railway Data Analysis ](https://github.com/alfiethom/Portofolio/blob/4e02f2f50f776637f6e578df696890df81f3ba3a/UKRailway.pdf)
+    This project is about an analysis of National railway Company to identify the most popular routes , determines the peak time Travels and analyses Revenur from different Tickets types .
 
  
   
