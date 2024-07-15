@@ -27,8 +27,8 @@ Welcome to my GitHub portofolio . I am Alfred Thomas passionate about data analy
 - **Project 1**: [Global Store Visualisation : Power BI Practise ](https://github.com/alfiethom/Portofolio/tree/e4649784efc85a769e2da926b9f254f44eef7faa/Global%20Store%20US)
   Hands on project to develop an interactive platform that visualizes global data trends for a store .
 
-- **Project 2**: [Heart Disesase Key indicator ](https://github.com/alfiethom/Portofolio/tree/7679b53f6f26be77436a7093e5fe5855bb7f28d8/Heart%20Disease%20Key%20indicator)  
-  Hands on project about Spotify Heart disease where i could agregate data to find trends and patterns regaing Heart disease.
+- **Project 2**: [Hosptal KPI Dashboard ](https://github.com/alfiethom/Portofolio/blob/caf19099b60aec31b007dc53ae909cc521c8b515/MavenHospital%20Challenge.pdf)  
+  develop a high-level Key Performance Indicator (KPI) dashboard for Massachusetts General Hospital (MGH) using Power BI.This dashboard will provide the executive team with crucial insights into the hospital’s recent performance, based on a subset of patient records.
 
 -   **Project 3**: [UK Railway Data Analysis ](https://github.com/alfiethom/Portofolio/blob/4e02f2f50f776637f6e578df696890df81f3ba3a/UKRailway.pdf)
     This project is about an analysis of National railway Company to identify the most popular routes , determines the peak time Travels and analyse the Revenue from different Tickets types .
