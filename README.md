@@ -17,7 +17,7 @@ Welcome to my GitHub portofolio . I am Alfred Thomas passionate about data analy
 
 # Data Analysis with SQL
 
-- **Project 1**: [European Football game analysis ](https://github.com/alfiethom/Portofolio/blob/0d05be04abaac37da2fd3bf6752411dc1db62cce/EuropeanGameAnalysis.ipynb))
+- **Project 1**: [European Football game analysis ](https://github.com/alfiethom/Portofolio/blob/0d05be04abaac37da2fd3bf6752411dc1db62cce/EuropeanGameAnalysis.ipynb)
   European football dataset project where SQL were used to explore differents KP such as Team performances , Player performances  .
 
 - **Project 2**: [Netflix Movies Analysis ](https://github.com/alfiethom/Portofolio/blob/e803c4c5c2e1faf25dce85c02ae30f6663c7da7b/SQL%20DATA%20ANALYSIS%20NETFLIX%20MOVIES.pdf)
